@@ -11,8 +11,9 @@ class Age
 {
     public function get(\DateTime $date)
     {
+        $now = new \DateTime();
 
-        return 12;
+        return $now->diff($date)->y;
     }
 
 }
